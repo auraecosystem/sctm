@@ -1,0 +1,102 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "acme": "https://acme.com/vocab#",
+    "departmentNumber": "acme:departmentNumber",
+    "deptOfPage": {
+      "@id": "acme:deptOfPage",
+      "@type": "@id"
+    },
+    "superTopic": {
+      "@id": "schema:isPartOf",
+      "@type": "@id"
+    }
+  },
+
+  "@graph": [
+    {
+      "@id": "https://www.acc.com",
+      "@type": "WebSite",
+      "name": "ACME Content Company Web Site",
+      "url": "https://www.acc.com/",
+      "helpPage": "https://www.acc.com/help.html",
+      "dateModified": "2025-01-01",
+      "publisher": {
+        "@id": "https://acc.com/org"
+      },
+      "image": {
+        "@id": "https://www.acc.com/ACCLogo.jpg"
+      }
+    },
+
+    {
+      "@id": "https://www.acc.com/ACCLogo.jpg",
+      "@type": "ImageObject",
+      "contentSize": "3224",
+      "url": "https://www.acc.com/ACCLogo.jpg"
+    },
+
+    {
+      "@id": "mailto:jb@acc.com",
+      "@type": "Person",
+      "name": "John Brown",
+      "email": "jb@acc.com",
+      "telephone": "+1-415-937-2607",
+      "jobTitle": "Web Administrator",
+      "worksFor": {
+        "@id": "https://acc.com/org"
+      },
+      "url": "https://www.acc.com/people/jb.html"
+    },
+
+    {
+      "@id": "https://acc.com/org",
+      "@type": "Organization",
+      "name": "The Acme Content Company",
+      "url": "https://www.acme.com"
+    },
+
+    {
+      "@id": "https://acc.com/departments/marketing",
+      "@type": "Organization",
+      "name": "E-Marketing Department",
+      "departmentNumber": 32
+    },
+
+    {
+      "@id": "https://www.acc.com/subjects/wildlife",
+      "@type": "Collection",
+      "name": "Wild Life Pictures taken in the Sahara",
+      "dateModified": "1995-01-01",
+      "isPartOf": {
+        "@id": "https://www.acc.com"
+      }
+    },
+
+    {
+      "@id": "https://www.acc.com/subjects/still-life",
+      "@type": "Collection",
+      "name": "Still Life Pictures",
+      "superTopic": "https://arts.yahoo.com",
+      "hasPart": {
+        "@id": "https://www.acc.com/pages/apple001"
+      }
+    },
+
+    {
+      "@id": "https://www.acc.com/pages/apple001",
+      "@type": "WebPage",
+      "name": "Apple Still Life Image",
+      "url": "https://www.acc.com/Apple001.html",
+      "author": {
+        "@id": "mailto:jb@acc.com"
+      },
+      "contentSize": "2000",
+      "deptOfPage": {
+        "@id": "https://acc.com/departments/marketing"
+      },
+      "acme:catalogNumber": "3232",
+      "acme:mirror": "https://www.mirrors.com/accbackups/Apple001.html"
+    }
+  ]
+}
