@@ -1,11 +1,9 @@
-
 ---
-	1.	Color-coded table with module scores (Iₙ, Rₜ, Sₘ)
-	2.	ASCII workflow diagram showing dependencies and prioritization
---- 
-  
-This creates a full, self-contained SCTM project dashboard in Markdown.
-
+tittle: sctm
+page: Color-coded table with module scores (Iₙ, Rₜ, Sₘ)
+Docs: ASCII workflow diagram showing dependencies and prioritization
+Description: This creates a full, self-contained SCTM project dashboard in Markdown.
+---
     
 ⸻
 
@@ -79,8 +77,10 @@ Sₘ:45.5
 4. **Update dynamically** as module metrics change; bars and colors adapt automatically.  
 
 ---
+**fully integrated SCTM Markdown dashboard** 
+---
 
-This is now a **fully integrated SCTM Markdown dashboard** for **Web4App Aura**:  
+**Web4App Aura**:  
 - Table + workflow combined  
 - Color-coded scores  
 - Prioritization guidance  
