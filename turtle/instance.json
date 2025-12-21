@@ -1,0 +1,20 @@
+{
+  "@context": "https://neomind.ai/ontology",
+  "@id": "https://www.acc.com/pages/apple001",
+  "@type": "schema:WebPage",
+  "name": "Apple Still Life Image",
+  "url": "https://www.acc.com/Apple001.html",
+
+  "author": {
+    "@type": "schema:Person",
+    "name": "John Brown",
+    "email": "jb@acc.com"
+  },
+
+  "department": {
+    "@id": "https://acc.com/departments/marketing"
+  },
+
+  "catalogNumber": "3232",
+  "mirror": "https://www.mirrors.com/accbackups/Apple001.html"
+}
