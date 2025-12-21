@@ -1,0 +1,20 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix neomind: <https://neomind.ai/ontology#> .
+
+neomind:WebPageShape
+  a sh:NodeShape ;
+  sh:targetClass neomind:WebPage ;
+  sh:property [
+    sh:path neomind:department ;
+    sh:class neomind:Department ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "Each page must have exactly one responsible department."
+  ] ;
+  sh:property [
+    sh:path schema:author ;
+    sh:class schema:Person ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "Each page must have exactly one author."
+  ] .
