@@ -1,0 +1,28 @@
+type Person {
+  id: ID!
+  name: String!
+  email: String!
+  pagesAuthored: [WebPage!]
+}
+
+type Department {
+  id: ID!
+  name: String!
+  pagesOwned: [WebPage!]
+}
+
+type WebPage {
+  id: ID!
+  name: String!
+  url: String!
+  author: Person!
+  department: Department!
+  catalogNumber: String
+  mirror: String
+}
+
+type Query {
+  getWebPage(id: ID!): WebPage
+  getDepartment(id: ID!): Department
+  getAuthor(id: ID!): Person
+}
