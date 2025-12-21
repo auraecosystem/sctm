@@ -1,4 +1,3 @@
-
 <XML-MCF>
  <!--- WebSiteVocab and PersonVocab define some of the basic
        terms we will use to describe web sites and people
