@@ -1,0 +1,65 @@
+{
+  "@context": {
+    "@vocab": "https://neomind.ai/ontology#",
+    "schema": "https://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+
+    "name": "schema:name",
+    "url": "schema:url",
+    "image": "schema:image",
+    "author": "schema:author",
+    "publisher": "schema:publisher",
+    "isPartOf": "schema:isPartOf",
+
+    "department": {
+      "@id": "neomind:department",
+      "@type": "@id"
+    },
+
+    "catalogNumber": {
+      "@id": "neomind:catalogNumber",
+      "@type": "xsd:string"
+    },
+
+    "mirror": {
+      "@id": "neomind:mirror",
+      "@type": "@id"
+    }
+  },
+
+  "@graph": [
+    {
+      "@id": "neomind:WebEntity",
+      "@type": "rdfs:Class",
+      "name": "Web Entity"
+    },
+
+    {
+      "@id": "neomind:ContentCollection",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": "neomind:WebEntity",
+      "name": "Content Collection"
+    },
+
+    {
+      "@id": "neomind:Department",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": "schema:Organization",
+      "name": "Department"
+    },
+
+    {
+      "@id": "neomind:department",
+      "@type": "rdf:Property",
+      "rdfs:domain": "schema:WebPage",
+      "rdfs:range": "neomind:Department"
+    },
+
+    {
+      "@id": "neomind:catalogNumber",
+      "@type": "rdf:Property",
+      "rdfs:domain": "schema:WebPage",
+      "rdfs:range": "xsd:string"
+    }
+  ]
+}
