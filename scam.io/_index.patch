@@ -1,5 +1,3 @@
-This patch includes
- 
    * mingw-w64-headers/include/winnt.h: compile fixes for1 gcc-4.9.3
    * mingw-w64-headers/crt/math.h: Likewise
    * mingw-w64-headers/crt/float.h (FLT_EPSILON,DBL_EPSILON,LDBL_EPSILON): Add
