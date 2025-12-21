@@ -1,3 +1,5 @@
+# patchfile
+
    * mingw-w64-headers/include/winnt.h: compile fixes for1 gcc-4.9.3
    * mingw-w64-headers/crt/math.h: Likewise
    * mingw-w64-headers/crt/float.h (FLT_EPSILON,DBL_EPSILON,LDBL_EPSILON): Add
@@ -7,7 +9,7 @@
    (lstat): Add function.
    * mingw-w64-headers/crt/_mingw_stat64.h: Likewise
    * mingw-w64-headers/crt/stdlib.h (realpath): Add function.
-
+ 
 Needed for building with gcc-4.9.3 and using with cross-libtool-2.4.6.
 
 Upstream status: not yet presented upstream.
