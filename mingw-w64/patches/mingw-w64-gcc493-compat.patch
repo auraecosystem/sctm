@@ -63,3 +63,4 @@ index 1e970f4..99a332f 100644
    __CRT_INLINE float __cdecl hypotf (float x, float y) { return (float) hypot ((double)x, (double)y);}
  #endif
    extern long double __cdecl hypotl (long double, long double);
+
