@@ -10,3 +10,4 @@ void print_ascii_art() {
     printf("| |_| | |_| |\n");
     printf(" \\___/ \\___/\n");
 }
+l
