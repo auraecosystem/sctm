@@ -5,7 +5,7 @@ Docs: ASCII workflow diagram showing dependencies and prioritization
 Description: This creates a full, self-contained SCTM project dashboard in Markdown.
 ---
     
-⸻
+
 
 # Web4App Aura – SCTM Dashboard
 
@@ -33,44 +33,47 @@ Description: This creates a full, self-contained SCTM project dashboard in Markd
 | XLSL Sheets       | 70                | 🟩🟩🟩🟩🟩🟩🟨   | 0.35                   | 🟨🟨🟨    | 45.5             | 🟨🟨🟨🟨🟨         |
 
 ---
-
 ## 2️⃣ SCTM Workflow Diagram
 
-      🔵 Project Core
+  ```.sctm
+🔵 Project Core       
              |
 ----------------------------------------
 
-|        |           |            |
-🟢 Quantum 🟡 Sparks  🟠 Nodes     🟣 Dimensions
+    |        |           |            |
+
+🟢Quantum🟡 Sparks  🟠Nodes 🟣Dimensions|
+
 Iₙ:85     Iₙ:72      Iₙ:90       Iₙ:65
-Rₜ:0.3    Rₜ:0.5     Rₜ:0.2      Rₜ:0.4
-Sₘ:59.5   Sₘ:36      Sₘ:72       Sₘ:39
-[▇▇▇▇▇▇▇ ] [▇▇▇▇   ] [▇▇▇▇▇▇▇▇] [▇▇▇▇  ]
+  Rₜ:0.3    Rₜ:0.5     Rₜ:0.2  Rₜ:0.4
+  Sₘ:59.5   Sₘ:36     Sₘ:72  Sₘ:39
+[▇▇▇▇▇▇▇ ]  [▇▇▇▇ ] [▇▇▇▇▇▇▇▇] [▇▇▇▇  ]
 
-|        |           |            |
+    |        |           |            |
+
 🔴 Teleportation Risk (Dependencies / Bottlenecks)
-|        |           |            |
 
-             
-			 🔷 XLSL Sheets
+    |        |           |            |
+```
+```XLSL Sheets
 
-Iₙ:70
-Rₜ:0.35
-Sₘ:45.5
-[▇▇▇▇▇▇  ]
-
- |
-       📊 Prioritized Execution
+     Iₙ:70
+     Rₜ:0.35
+     Sₘ:45.5 
+     [▇▇▇▇▇▇  ]
+	 
+    |  📊 Prioritized Execution |
 
 	•	Nodes (Sₘ=72) → High priority
 	•	Quantum Activity (Sₘ=59.5) → Medium-High priority
 	•	XLSL Sheets (Sₘ=45.5) → Medium priority
 	•	Sparks (Sₘ=36) → Low priority
 	•	Dimensions (Sₘ=39) → Low priority
-
+```
 ---
 
 ### ✅ How to Use
+
 1. **Check module table** for quick visual insight into influence, risk, and dynamic SCTM score.  
 2. **Follow ASCII workflow diagram** to understand dependencies and bottlenecks.  
 3. **Prioritize work** based on Sₘ: higher scores = higher impact / lower risk.  
